@@ -1,12 +1,17 @@
-import React from 'react';
 import { BsFillMoonStarsFill } from 'react-icons/bs';
 import { AiFillTwitterCircle, AiFillInstagram, AiFillFacebook} from 'react-icons/ai';
 import Image from 'next/image';
 import bibo1 from '../public/Images/Bibo1.jpg';
+// import { useState } from 'react';
 
 export default function Home() {
+
+  // const [darkMode, setDarkMode] = useState(false);
+
   return (
-    <div>
+    // <div className={darkMode? 'dark' : ''}>
+    // onClick={() => setDarkMode(!darkMode)} 
+      <div>
       <main className=' px-10'>
         <section className=' h-screen'>
           <nav className=' py-10 mb-2 flex justify-between'>
@@ -62,6 +67,20 @@ export default function Home() {
               <p className=' text-gray-700 py-1'>Photoshop</p>
               <p className=' text-gray-700 py-1'>Illustrator</p>
               <p className=' text-gray-700 py-1'>Figma</p>
+            </div>
+          </div>
+          <div className=' flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap'>
+            <div className=' basis-1/3 flex-1'>
+              <Image className=' rounded-lg object-cover' width={'100%'} height={'100%'} layout='responsive'/>
+            </div>
+            <div className=' basis-1/3 flex-1'>
+              <Image className=' rounded-lg object-cover' width={'100%'} />
+            </div>
+            <div className=' basis-1/3 flex-1'>
+              <Image className=' rounded-lg object-cover' width={'100%'} />
+            </div>
+            <div className=' basis-1/3 flex-1'>
+              <Image className=' rounded-lg object-cover' width={'100%'} />
             </div>
           </div>
         </section>
